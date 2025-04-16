@@ -3,7 +3,15 @@ const express = require('express');
 const Schema = mongoose.Schema;
 const ObjectId = mongoose.ObjectId;
 
-const connection = mongoose.connect('mongodb+srv://sshivamgupta833:KuA-GF8kd7ps7aJ@cluster0.j7ombhi.mongodb.net/todo-app')
+const connection = mongoose.connect('mongodb+srv://sshivamgupta33:BXpskq8o1dOycdT0@cluster0.j7ombhi.mongodb.net/todo-app'
+    // {
+    //     useNewUrlParser: true,
+    //     useUnifiedTopology: true,
+    //     tlsAllowInvalidCertificates: true,
+    //     serverSelectionTimeoutMS: 10000,
+    //     ssl: true
+    //   }
+)
 
 const User = new Schema({
     email : {type: String, unique: true},
