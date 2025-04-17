@@ -7,6 +7,7 @@ const bcrypt = require('bcryptjs')
 const app = express();
 app.use(express.json());
 
+//signup
 app.post('/signup', async function(req, res){
     const username = req.body.username;
     const password = req.body.password;
@@ -39,6 +40,7 @@ app.post('/signup', async function(req, res){
     }
 })
 
+//signin
 app.post('/signin', async function(req, res){
     const email = req.body.email;
     const password = req.body.password;
